@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSG.2/1</title>
+    <title>Weapons</title>
     <link rel="stylesheet" type="text/css" href="mission.css">
 
 </head>
@@ -25,19 +25,32 @@
 
     <section class="navbar">
         <nav>
-            <ul>
-                <li><a href=" ">Home</a></li>
-                <li><a href=" "></a>History</li>
-                <li><a href=" "></a>Fit to Fight</li>
-                <li><a href=" "></a>Contact Us</li>
+            <ul id="navButtons">
+                <a href="http://127.0.0.1:3000/contact.html">
+                <button><li>Contact us</li></button>
+                </a>
+                <button><li><a href=""></a>History</li></button>
+                <button><li><a href=""></a>Fit to Fight</li></button>
+                <a href="http://127.0.0.1:3000/index.html">
+                <button type="button">Home</button>
+                </a>
+                </ul>
             </ul>
         </nav>
     </section>
 
     <section class="home">
         <div id="intro">
-            <h1>"you bump it, we thump it"</h1>
+            <h1>"You bump it, we thump it"</h1>
             <p>Below is each weapon system used by FSG platoon, each weapon system differs in size and calibre but ultimately works towards the same goal of either suppresive fire or elimination of armoured vehicles.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="soundPara">
+            <p>click images for sound</p>
+            <img id="" src="fsg20.JPG">
+            </div>
         </div>
     </section>
 
@@ -49,7 +62,7 @@
                 <br>
                 The total weight of this weapon system is 26KGs
             </p>
-            <img src="fsg1.jpg" alt="SFMG" onmouseover="sfmgAudio.call(this)"/>
+            <img src="fsg1.jpg" alt="SFMG" onclick="sfmgAudio.call(this)"/>
             <audio id="sfmgaudio" src="SFMGa.mp3"></audio>
         </div>
         <div id="GMG">
@@ -63,7 +76,7 @@
                </ul>
                The total weight of this weapon system is 63.74 KGs
             </p>
-            <img src="fsg4.jpg" alt="GMG"  onmouseover="gmgAudio.call(this)"/>
+            <img src="fsg4.jpg" alt="GMG"  onclick="gmgAudio.call(this)"/>
             <audio id="gmgaudio" src="GMGa.mp3"></audio>
         </div>
         <div id="fifty">
@@ -73,7 +86,7 @@
                 <br>
                 The total weight of this weapon system is 58KGs
             </p>
-            <img src="fsg5.jpg" alt="fifty" onmouseover="hmgAudio.call(this)"/>
+            <img src="fsg5.jpg" alt="fifty" onclick="hmgAudio.call(this)"/>
             <audio id="hmgaudio" src="HMGa.mp3"></audio>
         </div>
      </section>
@@ -95,7 +108,7 @@
               <br>
               The total weight of this weapon system is 22.3KGs
            </p>
-           <img src="fsg14.jpg" alt="javelin" onmouseover="javAudio.call(this)"/>
+           <img src="fsg14.jpg" alt="javelin" onclick="javAudio.call(this)"/>
            <audio id="javaudio" src="JAVa.mp3"></audio>
         </div>
         <div id="AMR">
@@ -104,7 +117,7 @@
             <br>
             <br>
             The total weight of this weapon is 16KGs</p>
-            <img src="fsg11.jpg" alt="AMR" onmouseover="amrAudio.call(this)">
+            <img src="fsg11.jpg" alt="AMR" onclick="amrAudio.call(this)">
             <audio id="amraudio" src="AMRa.mp3"></audio>
         </div>
     </section>

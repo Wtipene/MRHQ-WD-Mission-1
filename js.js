@@ -34,7 +34,7 @@ function outImg2() {
 
 //hover function for contact page
 function onImg3() {
-    this.setAttribute('src', 'fsg17.jpg');
+    this.setAttribute('src', 'fsg21.jpg');
 }
 function outImg3() {
     this.setAttribute('src', 'fsg18.jpg');
@@ -48,6 +48,9 @@ function play() {
     let audio = document.getElementById("audio");
     audio.play();
 }
+
+
+
 
 //WEAPONS PAGE
 //mouse over function for SFMG img
@@ -79,3 +82,14 @@ function amrAudio() {
     let audio = document.getElementById('amraudio');
     audio.play();
 }
+
+let navBar = document.getElementById("navButtons");
+
+navBar.addEventListener("mouseover", function( event ) {
+    event.target.style.background = "black";
+  
+    setTimeout(function() {
+    event.target.style.background = "linear-gradient(0deg, #6e0000,#000000)"
+    }, 100);
+  }, false);
+
